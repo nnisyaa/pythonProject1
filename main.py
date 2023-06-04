@@ -1,52 +1,27 @@
-# number = 0
-# while number < 30:
-#  if number == 0:
-#   continue
-#  print (number)
-#  number += 3
-from random import random
 
-# while True:
-#     print("1. First Task")
-#     task_n = int(input)
-#     if task_n == 1:
-#      print ("Task number 1")
-
-# import random
-# n = random.randint(10, 99)
-# print(n)
-# from random import randint
-#
-# while True:
-#  n = randint(10, 99)
-#  print(n)
-#  flag = int(input())
+count = 0
+while True:
+	num = int(input("Enter a number"))
+	count += num
+	if num == 0:
+		break
+print(count)
 
 
-# # task 1
-# count = 0
-# while True:
-# 	num = int(input("Enter a number"))
-# 	count += num
-# 	if num == 0:
-# 		break
-# print(count)
-#
-# # task 2
-# while True:
-# 	num1 = int(input("Enter a number"))
-# 	if num1 == 0:
-# 		print("exit")
-# 		break
-# 	elif nu1m % 3 == 0 and 1 < num1 <= 30:
-# 		print(num1)
+while True:
+	num1 = int(input("Enter a number"))
+	if num1 == 0:
+		print("exit")
+		break
+	elif num1 % 3 == 0 and 1 < num1 <= 30:
+		print(num1)
 
 
-# task 3
+
 import random
 n = random.randint(1, 100)
-print(n)
-attempt = 4
+
+attempt = 7
 while True:
 	num2 = int(input("Guess the number"))
 	if num2 == n:
@@ -65,9 +40,12 @@ while True:
 		print("cold")
 	elif n-99 < num2 < n+99:
 		print("super cold")
-	elif attempt -= 1:
+	attempt -= 1
+	if attempt == 0:
 		print("you lost")
 		break
+
+
 
 
 
